@@ -1,7 +1,19 @@
 /* BUTTONS */
 
 .btn-primary {
+    background-color: black;
+    border: 5px solid white;
+    color: #e7edde;
+    border-radius: 100px;
+    padding: 9px 28px;
+    display: inline-block;
 }
 
 .btn-secondary {
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 100px;
+    padding: 9px 28px;
+    display: inline-block;
 }

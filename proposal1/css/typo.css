@@ -1,15 +1,41 @@
 /* TYPOGRAPHY */
 
+
+@import url(https://db.onlinewebfonts.com/c/af8b6e8e6d8b8588ad4fe9edd5a67888?family=Snell+Roundhand+Black+Script);
+
+
+
+
+@font-face {
+    font-family: "Snell Roundhand Black Script";
+    src: url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.eot");
+    src: url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/af8b6e8e6d8b8588ad4fe9edd5a67888.svg#Snell Roundhand Black Script")format("svg");
+}
+
 h1 {
+    color: white;
+    font-family: "Snell Roundhand Black Script";
 }
 
 h2 {
+    color: white;
+    font-family: "futura-pt-bold", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 h3 {
+    color: white;
+    font-family: "Snell Roundhand Black Script";
 }
 
 h4 {
+    color: white;
+    font-family: "Snell Roundhand Black Script";
 }
 
 h5 {
@@ -19,7 +45,16 @@ h6 {
 }
 
 p {
+    color: white;
+    font-family: "quicksand", sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 a {
+    color: white;
+}
+
+ul {
+    color: white;
 }
