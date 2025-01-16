@@ -7,6 +7,10 @@
     border-radius: 100px;
     padding: 9px 28px;
     display: inline-block;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
 }
 
 .btn-secondary {
@@ -16,4 +20,8 @@
     border-radius: 100px;
     padding: 9px 28px;
     display: inline-block;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
 }
