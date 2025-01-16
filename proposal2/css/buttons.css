@@ -17,3 +17,13 @@
     border: 5px, solid #FFFFE7;
 }
 
+.btn-secondary {
+    border: 5px solid #E84A5F;
+    background-color: #FFFFE7;
+    border-radius: 35px;
+    padding: 8px;
+    text-decoration: none;
+    color: #E84A5F;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+}
