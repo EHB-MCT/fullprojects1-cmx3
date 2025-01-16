@@ -1,0 +1,84 @@
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    font-family: 'cc-phat-boi-bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #E84A5F;
+    font-size: 140px;
+}
+
+h2 {
+    font-family: 'cc-phat-boi-bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #E84A5F;
+    font-size: 75px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #faf5e5;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #faf5e5;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #faf5e5;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h6 {
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #faf5e5;
+    font-size: 12px;
+}
+
+h7 {
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #faf5e5;
+    font-size: 10px;
+    
+}
+
+h8 {
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #faf5e5;
+    font-size: 8px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #faf5e5;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    color: #faf5e5;
+    font-weight: 400;
+    font-size: 22px;
+ 
+}
+
+ul{
+    padding: 25px;
+}
