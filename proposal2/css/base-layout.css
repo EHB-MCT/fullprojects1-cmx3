@@ -1,0 +1,11 @@
+/* BASE LAYOUT FLEXBOX */
+
+body {
+	margin: 0;
+	margin-left: 150px;
+	background-color: #FFFFE7;
+	font-family: 'Poppins', sans-serif;
+	color: #E84A5F;
+	font-weight: 400;
+
+}
