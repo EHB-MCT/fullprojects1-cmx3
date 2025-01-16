@@ -12,7 +12,7 @@ Please do not modify this file. A normalize.css file is used to standardize defa
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
