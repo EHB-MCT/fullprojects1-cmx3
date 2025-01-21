@@ -20,7 +20,7 @@ body {
 #grid {
     position: absolute;
     display: none;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     width: 100%;
     height: 100%;
 
@@ -44,6 +44,7 @@ header img {
     grid-column: 10/13;
     align-self: center;
     width: 50%;
+    grid-row: 1/2;
 
 }
 
@@ -77,6 +78,26 @@ ul {
     font-weight: bold;
     font-size: 36px;
     list-style: none;
+}
+
+.picture {
+  background-image: url(images_for_website/header_picture.jpg);
+  grid-column: 2/13;
+  background-repeat: no-repeat;
+  width: 150%;
+  height: 60vh;
+
+  
+
+}
+
+.picture2 {
+  background-image: url(images_for_website/pink_goo_new.png);
+  grid-column: 2/13;
+  background-repeat: no-repeat;
+  width: 93%;
+  height: 100vh;
+
 }
 
 #menuToggle
