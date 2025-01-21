@@ -43,7 +43,7 @@ header {
 header img {
     grid-column: 10/13;
     align-self: center;
-    width: 35%;
+    width: 50%;
 
 }
 
