@@ -43,8 +43,10 @@ header {
 header img {
     grid-column: 10/13;
     align-self: center;
-    width: 50%;
+    width: 40%;
     grid-row: 1/2;
+    padding-left: 290px;
+    padding-top: 10px;
 
 }
 
@@ -80,25 +82,7 @@ ul {
     list-style: none;
 }
 
-.picture {
-  background-image: url(images_for_website/header_picture.jpg);
-  grid-column: 2/13;
-  background-repeat: no-repeat;
-  width: 150%;
-  height: 60vh;
 
-  
-
-}
-
-.picture2 {
-  background-image: url(images_for_website/pink_goo_new.png);
-  grid-column: 2/13;
-  background-repeat: no-repeat;
-  width: 93%;
-  height: 100vh;
-
-}
 
 #menuToggle
 {
@@ -252,3 +236,40 @@ ul {
   transform: none;
 }
 
+.formbackground {
+    padding: 10px;
+}
+
+.text1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text2 {
+    position: absolute;
+    top:30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text3 {
+    position: absolute;
+    top:40%;
+    left: 23.6%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.box {
+    position: absolute;
+    background-color: white;
+    border: 10px solid white;
+    color: #e7edde;
+    border-radius: 20px;
+    padding: 8px 18px;
+    padding-right: 100px;
+}
