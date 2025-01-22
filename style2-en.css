@@ -273,3 +273,15 @@ ul {
     padding: 8px 18px;
     padding-right: 100px;
 }
+
+.lname {
+  border:2px solid #000000 ;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  font-size: 20px;
+  text-align: center;
+}
