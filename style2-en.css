@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #3A553B;
+    background-color: #132615;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -34,59 +34,77 @@ body {
 }
 
 header {
-    grid-column: 1/13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 
 }
 
 header img {
-    grid-column: 10/13;
-    align-self: center;
-    width: 40%;
-    grid-row: 1/2;
-    padding-left: 290px;
-    padding-top: 10px;
+  width: 125%;
+  right: 200px;
+  top: 15px;
+  position: relative;
 
 }
 
 header nav {
-    grid-column: 5/13;
-    align-self: center;
-    display: none;
+  grid-column: 6/13;
+  align-self: center;
+  grid-row: 1/2;
 
 }
 
 header nav ul {
-    margin: 0;
-    padding: 0;
-    float: right;
+  margin: 0;
+  padding: 0;
+  float: right;
 
 }
 
+.languages{
+  position: relative;
+  right: 1000px;
+  
+}
+
 header nav ul li {
-    display: inline;
-    padding-left: 10px;
+  display: inline;
+  padding-left: 10px;
+  margin-inline-start: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 
 }
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  top: 25px;
 
 }
 
-ul {
-    font-weight: bold;
-    font-size: 36px;
-    list-style: none;
+.pages {
+  position: relative;
+  top: 40px;
+  left: 80px;
+
+
 }
 
+.background img {
+  grid-column: 1/13;
+  width: 100%;
+  grid-row: 3/4;
+  position: absolute;
+  top: 250px;
 
+}
 
 #menuToggle
 {
-  display: inline-block;
+  display: none;
   /* You can also use relative/absolute here if you want to stay on the top */
   position: fixed;
   top: 50px;
@@ -244,6 +262,7 @@ ul {
     left: 20%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 10;
 }
 
 .text2 {
@@ -252,6 +271,7 @@ ul {
     left: 53%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 10;
 }
 
 .text3 {
@@ -260,6 +280,7 @@ ul {
     left: 57%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 10;
 }
 
 .text4 {
@@ -268,6 +289,8 @@ ul {
   left: 25%;
   transform: translate(-50%, -50%);
   color: white;
+  z-index: 10;
+
 }
 
 
@@ -282,14 +305,15 @@ ul {
   padding-right: 100px;
   right: 705px;
   top: 370px;
+  z-index: 10;
+  position: absolute;
 }
 
 .lname {
 position: absolute;
 background-color: white;
-border: 10px solid white;
+border: 3px solid black;
 color: black;
-border-radius: 20px;
 padding: 8px 18px;
 padding-right: 100px;
 right: 310px;
@@ -298,27 +322,31 @@ top: 370px;
 
 .country {
   position: absolute;
-  top: 550px;
-  right: 282px;
-  border: 10px solid white;
-  border-radius: 20px;
+  bottom: 143px;
+  left: 475px;
+  border: 3px solid black;
+  position: relative;
+  padding-bottom: 12px;
+  padding-right: 95px;
+  z-index: 10;
 }
 
 .typeemail {
   position: absolute;
   top: 550px;
-  right: 690px;
+  left: 100px;
   border: 10px solid white;
   border-radius: 20px;
   padding-right: 130px;
+  position: relative;
 }
 
 .typetext {
   position: absolute;
-  top: 750px;
-  right: 280px;
-  border: 10px solid white;
-  border-radius: 20px;
-  padding-right: 540px;
-  padding-bottom: 250px;
+  top: 575px;
+  right: 177px;
+  border: 3px solid black;
+  padding-right: 560px;
+  padding-bottom: 180px;
+  
 }
