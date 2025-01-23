@@ -84,10 +84,14 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  top: 25px;
 
 }
 
-
+.pages {
+  position: relative;
+  top: 40px;
+}
 
 .rectangle {
   position: absolute;
