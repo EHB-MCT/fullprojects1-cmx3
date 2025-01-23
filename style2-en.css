@@ -236,9 +236,7 @@ ul {
   transform: none;
 }
 
-.formbackground {
-    padding: 10px;
-}
+
 
 .text1 {
     position: absolute;
@@ -250,36 +248,77 @@ ul {
 
 .text2 {
     position: absolute;
-    top:30%;
-    left: 20%;
+    top:20%;
+    left: 53%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
 .text3 {
     position: absolute;
-    top:40%;
-    left: 23.6%;
+    top:30%;
+    left: 57%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
-.box {
-    position: absolute;
-    background-color: white;
-    border: 10px solid white;
-    color: #e7edde;
-    border-radius: 20px;
-    padding: 8px 18px;
-    padding-right: 100px;
+.text4 {
+  position: absolute;
+  top:30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-.lname {
+
+
+.fname {
   position: absolute;
   background-color: white;
   border: 10px solid white;
-  color: #e7edde;
+  color: black;
   border-radius: 20px;
   padding: 8px 18px;
   padding-right: 100px;
+  right: 705px;
+  top: 370px;
+}
+
+.lname {
+position: absolute;
+background-color: white;
+border: 10px solid white;
+color: black;
+border-radius: 20px;
+padding: 8px 18px;
+padding-right: 100px;
+right: 310px;
+top: 370px;
+}
+
+.country {
+  position: absolute;
+  top: 550px;
+  right: 282px;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+
+.typeemail {
+  position: absolute;
+  top: 550px;
+  right: 690px;
+  border: 10px solid white;
+  border-radius: 20px;
+  padding-right: 130px;
+}
+
+.typetext {
+  position: absolute;
+  top: 750px;
+  right: 280px;
+  border: 10px solid white;
+  border-radius: 20px;
+  padding-right: 540px;
+  padding-bottom: 250px;
 }
