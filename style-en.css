@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 body {
-    background-color: #3A553B;
+    background-color: #132615 ;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 
@@ -37,73 +37,57 @@ body {
 }
 
 header {
-    grid-column: 1/13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 
 }
 
 header img {
-    grid-column: 10/13;
-    position: absolute;
-    width: 50%;
-    left: 270px;
-    top: 20px;
+  width: 125%;
+  right: 200px;
+  top: 15px;
+  position: relative;
 
 }
 
 header nav {
-    grid-column: 5/13;
-    align-self: center;
-    display: none;
+  grid-column: 6/13;
+  align-self: center;
+  grid-row: 1/2;
 
 }
 
 header nav ul {
-    margin: 0;
-    padding: 0;
-    float: right;
+  margin: 0;
+  padding: 0;
+  float: right;
 
 }
 
+.languages{
+  position: relative;
+  right: 1000px;
+  
+}
+
 header nav ul li {
-    display: inline;
-    padding-left: 10px;
+  display: inline;
+  padding-left: 10px;
+  margin-inline-start: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 
 }
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 
 }
 
-ul {
-    font-weight: bold;
-    font-size: 36px;
-    list-style: none;
-}
 
-.picture {
-  background-image: url(images_for_website/header_picture.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-
-
-
-}
-
-.picture2 {
-  background-image: url(images_for_website/pink_goo_new_generation2.png);
-  grid-column: 2/13;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 90vh;
-  background-size: cover;
-
-}
 
 .rectangle {
   position: absolute;
@@ -127,9 +111,29 @@ ul {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  #menuToggle
+  {
+    display: inline-block !important;
+    /* You can also use relative/absolute here if you want to stay on the top */
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+
+}
+
+
 #menuToggle
 {
-  display: inline-block;
+  display: none;
   /* You can also use relative/absolute here if you want to stay on the top */
   position: fixed;
   top: 50px;
