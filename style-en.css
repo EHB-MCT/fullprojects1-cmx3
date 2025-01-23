@@ -91,6 +91,7 @@ header nav ul li a {
 .pages {
   position: relative;
   top: 40px;
+  left: 80px;
 }
 
 .rectangle {
