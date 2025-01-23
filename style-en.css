@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, minmax(100px, auto));
+    grid-template-rows: repeat(4, minmax(100px, auto));
     position: relative;
 
 }
@@ -94,27 +94,6 @@ header nav ul li a {
   left: 80px;
 }
 
-.rectangle {
-  position: absolute;
-  width: 700px;
-  height: 300px;
-  background-color: #D2C7CB;
-  border-radius: 30px;
-  left: 480px;
-  top: 1400px;
-  
-
-}
-
-  .rectangle p {
-  color: #231F20;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: medium;
-  font-size: 25px;
-  padding-left: 25px;
-  padding-bottom: 10px;
-
-}
 
 @media screen and (max-width: 768px) {
 
@@ -288,3 +267,17 @@ header nav ul li a {
   transform: none;
 }
 
+
+.picture {
+
+}
+
+.picture img {
+  grid-column: 1/13;
+  width: 1600%;
+  grid-row: 1/4;
+  top: 150px;
+  right: 200px;
+  position: relative;
+
+}
