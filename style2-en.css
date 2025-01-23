@@ -99,6 +99,7 @@ header nav ul li a {
   grid-row: 3/4;
   position: absolute;
   top: 250px;
+  
 
 }
 
@@ -256,83 +257,43 @@ header nav ul li a {
 
 
 
-.text1 {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 10;
-}
-
-.text2 {
-    position: absolute;
-    top:20%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 10;
-}
-
-.text3 {
-    position: absolute;
-    top:30%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 10;
-}
-
-.text4 {
-  position: absolute;
-  top:30%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 10;
-
-}
-
-
-
 .fname {
-  position: absolute;
+  position: relative;
   background-color: white;
-  border: 10px solid white;
+  border: 3px solid black;
   color: black;
-  border-radius: 20px;
   padding: 8px 18px;
-  padding-right: 100px;
-  right: 705px;
-  top: 370px;
-  z-index: 10;
-  position: absolute;
+  padding-right: 0px;
+  left: 775px;
+  bottom: 179px;
+  
+
 }
 
 .lname {
-position: absolute;
+position: relative;
 background-color: white;
 border: 3px solid black;
 color: black;
 padding: 8px 18px;
-padding-right: 100px;
-right: 310px;
-top: 370px;
+padding-right: 50px;
+left: 760px;
+bottom: 179px;
+
 }
 
 .country {
-  position: absolute;
-  bottom: 143px;
-  left: 475px;
+  bottom: 127px;
+  left: 350px;
   border: 3px solid black;
   position: relative;
   padding-bottom: 12px;
   padding-right: 95px;
   z-index: 10;
+
 }
 
 .typeemail {
-  position: absolute;
   top: 550px;
   left: 100px;
   border: 10px solid white;
@@ -342,11 +303,141 @@ top: 370px;
 }
 
 .typetext {
-  position: absolute;
-  top: 575px;
-  right: 177px;
+  position: relative;
+  bottom: 65px;
+  right: 60px;
   border: 3px solid black;
   padding-right: 560px;
   padding-bottom: 180px;
   
+}
+
+.bg-green {
+  background-color: #86397f; 
+  color: white;
+  padding: 20px;
+  margin: -25px;
+}
+
+.wrap {
+  max-width: 1342px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.footer-bottom img {
+  max-width: 150px;
+  height: auto;
+}
+
+.contact-info {
+  position: absolute;
+  right: 800px;
+}
+
+.contact-info h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin: 0 0 10px;
+}
+
+.contact-info a {
+  color: #FAF5E5;
+  text-decoration: none;
+}
+
+.house {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FAF5E5;
+}
+
+.regular {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FAF5E5;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-right nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer-right nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-right nav ul li a {
+  color: #FAF5E5;
+  text-decoration: none;
+  font-size: 14px;
+  bottom: 15px;
+
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social img {
+  width: 50%;
+}
+
+.social-facebook {
+position: relative;
+bottom: 100px;
+left: 50px;
+}
+
+.social-insta {
+  position: relative;
+  bottom: 100px;
+}
+
+  .social-youtube {
+    position: relative;
+    right: 430px;
+
+      }
+
+.social-vimeo {
+  position: relative;
+  right: 160px;
+
+   }
+
+.social li {
+  list-style: none;
+}
+
+.social a {
+  color: #FAF5E5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social a span {
+  display: none; /* Hides the text, only shows icons */
 }
