@@ -303,6 +303,115 @@ header nav ul li a {
 
 }
 
+.sticker {
+  position: absolute;
+  width: 180px; /* Adjust size of the sticker */
+  height: 100px;
+  background-color: transparent; /* Semi-transparent background for sticker area */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+}
+
+.sticker:hover {
+  transform: scale(1.2); /* Slightly enlarge the sticker on hover */
+}
+
+.info-box {
+  position: absolute;
+  top: -80px; /* Adjust the position of the info box */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background-color: #faf5e5;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.info-box img {
+  width: 25%;
+  position: relative;
+  top: 25px;
+  border-radius: 20px;
+
+}
+
+.info-box h3 {
+  left: 40px;
+  position: relative;
+  color: #86397f
+
+}
+
+.info-box p {
+font-size: small;
+top: 50px;
+
+}
+
+.sticker:hover .info-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.sticker-10years {
+  position: absolute;
+  width: 280px; /* Adjust size of the sticker */
+  height: 275px;
+  background-color: transparent; /* Semi-transparent background for sticker area */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+}
+
+.sticker-10years:hover {
+  transform: scale(1.2); /* Slightly enlarge the sticker on hover */
+}
+
+.info-box-10years {
+  position: absolute;
+  top: -80px; /* Adjust the position of the info box */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 250px;
+  background-color: #faf5e5;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.info-box-10years p {
+font-size: small;
+top: 50px;
+
+}
+
+.info-box-10years h3 {
+  color: #86397f;
+
+}
+
+.sticker-10years:hover .info-box-10years {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 1342px) {
 
   .picture img {

@@ -441,3 +441,20 @@ left: 50px;
 .social a span {
   display: none; /* Hides the text, only shows icons */
 }
+
+
+.video-container {
+  margin: 20px auto;
+  max-width: 800px;
+  position: relative;
+  padding-bottom: 150px;
+  padding-top: 200px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

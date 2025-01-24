@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #132615;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, minmax(100px, auto));
+    position: relative;
+
+}
+
+
+#grid {
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(20, 1fr);
+    width: 100%;
+    height: 100%;
+
+}
+
+#grid p {
+    border: 1px solid #000;
+    margin: 0;
+    opacity: 0.2;
+
+}
+
+header {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+
+header img {
+  width: 125%;
+  right: 200px;
+  top: 15px;
+  position: relative;
+
+}
+
+header nav {
+  grid-column: 6/13;
+  align-self: center;
+  grid-row: 1/2;
+
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+
+}
+
+.languages{
+  position: relative;
+  right: 1000px;
+  
+}
+
+header nav ul li {
+  display: inline;
+  padding-left: 10px;
+  margin-inline-start: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  top: 25px;
+
+}
+
+.pages {
+  position: relative;
+  top: 40px;
+  left: 80px;
+
+
+}
+
+.background img {
+  grid-column: 1/13;
+  width: 100%;
+  grid-row: 3/4;
+  position: absolute;
+  top: 250px;
+  
+
+}
+
+#menuToggle
+{
+  display: none;
+  /* You can also use relative/absolute here if you want to stay on the top */
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #eb5771;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #86397f;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #eb5771;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #faf5e5;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  opacity: 85%;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+.fname {
+  position: relative;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  padding: 8px 18px;
+  padding-right: 0px;
+  left: 775px;
+  bottom: 179px;
+  
+
+}
+
+.lname {
+position: relative;
+background-color: white;
+border: 3px solid black;
+color: black;
+padding: 8px 18px;
+padding-right: 50px;
+left: 760px;
+bottom: 179px;
+
+}
+
+.country {
+  bottom: 127px;
+  left: 350px;
+  border: 3px solid black;
+  position: relative;
+  padding-bottom: 12px;
+  padding-right: 95px;
+  z-index: 10;
+
+}
+
+.typeemail {
+  top: 550px;
+  left: 100px;
+  border: 10px solid white;
+  border-radius: 20px;
+  padding-right: 130px;
+  position: relative;
+}
+
+.typetext {
+  position: relative;
+  bottom: 65px;
+  right: 60px;
+  border: 3px solid black;
+  padding-right: 560px;
+  padding-bottom: 180px;
+  
+}
+
+.bg-green {
+  background-color: #86397f; 
+  color: white;
+  padding: 20px;
+  margin: -25px;
+}
+
+.wrap {
+  max-width: 1342px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.footer-bottom img {
+  max-width: 150px;
+  height: auto;
+}
+
+.contact-info {
+  position: absolute;
+  right: 800px;
+}
+
+.contact-info h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin: 0 0 10px;
+}
+
+.contact-info a {
+  color: #FAF5E5;
+  text-decoration: none;
+}
+
+.house {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FAF5E5;
+}
+
+.regular {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FAF5E5;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-right nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer-right nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-right nav ul li a {
+  color: #FAF5E5;
+  text-decoration: none;
+  font-size: 14px;
+  bottom: 15px;
+
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social img {
+  width: 50%;
+}
+
+.social-facebook {
+position: relative;
+bottom: 100px;
+left: 50px;
+}
+
+.social-insta {
+  position: relative;
+  bottom: 100px;
+}
+
+  .social-youtube {
+    position: relative;
+    right: 430px;
+
+      }
+
+.social-vimeo {
+  position: relative;
+  right: 160px;
+
+   }
+
+.social li {
+  list-style: none;
+}
+
+.social a {
+  color: #FAF5E5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social a span {
+  display: none; /* Hides the text, only shows icons */
+}
+
+
+.video-container {
+  margin: 20px auto;
+  max-width: 800px;
+  position: relative;
+  padding-bottom: 150px;
+  padding-top: 200px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
