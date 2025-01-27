@@ -71,6 +71,7 @@ header nav ul {
   
 }
 
+
 header nav ul li {
   display: inline;
   padding-left: 10px;
@@ -85,13 +86,23 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   top: 25px;
+  transition: color 0.5s, transform 0.5s;
+  transition-timing-function: ease-in;
 
 }
+
+header nav ul li a:hover {
+  transform: translateY(-10px);
+  color: #86397f;
+
+}
+
 
 .pages {
   position: relative;
   top: 40px;
   left: 80px;
+
 }
 
 
