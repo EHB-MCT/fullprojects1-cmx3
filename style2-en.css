@@ -255,60 +255,160 @@ header nav ul li a {
   transform: none;
 }
 
+@media screen and (max-width: 1342px) {
+
+  .fname {
+    position: absolute;
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    padding:5px 5px !important;
+    left: 625px !important;
+    bottom: 379px !important;
+    
+  }
+  
+  .lname {
+  position: absolute;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  padding:5px 5px !important;
+  left: 775px !important;
+  bottom: 379px !important;
+  
+  }
+  
+  .country {
+    border: 3px solid black;
+    position: absolute;
+    padding:5px 6px !important;
+    left: 625px !important;
+    bottom: 333px !important;
+    z-index: 10;
+  
+  }
+  
+  .typetext {
+    position: absolute;
+    bottom: 153px !important;
+    left: 625px !important;
+    border: 3px solid black;
+    width: 320px;
+    padding-right: 250px !important;
+    padding-bottom: 138px !important;
+    z-index: 30;
+    
+  }
+
+  header {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  
+  }
+  
+  header img {
+    width: 100%;
+    left: 50px;
+    top: 15px;
+    position: relative;
+  
+  }
+  
+  header nav {
+    grid-column: 6/12;
+    align-self: center;
+    grid-row: 1/2;
+  
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+  
+  }
+  
+  .languages{
+    position: relative;
+    right: 675px;
+    
+  }
+  
+  header nav ul li {
+    display: inline;
+    padding-left: 10px;
+    margin-inline-start: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    top: 25px;
+  
+  }
+  
+  .pages {
+    position: relative;
+    top: 40px;
+    left: 80px;
+  }
+
+}
+
 
 
 .fname {
-  position: relative;
+  position: absolute;
   background-color: white;
   border: 3px solid black;
   color: black;
   padding: 8px 18px;
   padding-right: 0px;
-  left: 775px;
-  bottom: 179px;
+  left: 785px;
+  bottom: 392px;
+  z-index: 10;
   
 
 }
 
 .lname {
-position: relative;
+position: absolute;
 background-color: white;
 border: 3px solid black;
 color: black;
 padding: 8px 18px;
 padding-right: 50px;
-left: 760px;
-bottom: 179px;
+left: 968px;
+bottom: 392px;
+z-index: 15;
 
 }
 
 .country {
-  bottom: 127px;
-  left: 350px;
+  bottom: 337px;
+  left: 785px;
   border: 3px solid black;
-  position: relative;
+  position: absolute;
   padding-bottom: 12px;
   padding-right: 95px;
-  z-index: 10;
+  z-index: 20;
 
-}
-
-.typeemail {
-  top: 550px;
-  left: 100px;
-  border: 10px solid white;
-  border-radius: 20px;
-  padding-right: 130px;
-  position: relative;
 }
 
 .typetext {
-  position: relative;
-  bottom: 65px;
-  right: 60px;
+  position: absolute;
+  bottom: 105px;
+  right: 176px;
   border: 3px solid black;
   padding-right: 560px;
   padding-bottom: 180px;
+  z-index: 30;
   
 }
 
@@ -448,7 +548,7 @@ left: 50px;
   max-width: 800px;
   position: relative;
   padding-bottom: 150px;
-  padding-top: 200px;
+  padding-top: 350px;
 }
 
 video {
