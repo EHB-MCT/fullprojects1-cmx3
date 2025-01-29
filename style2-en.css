@@ -75,6 +75,7 @@ header nav ul li {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 25px;
+  margin-bottom: 100px;
 
 }
 
@@ -99,6 +100,7 @@ header nav ul li a {
   grid-row: 3/4;
   position: absolute;
   top: 50px;
+  margin-top: 50px;
   
 
 }
@@ -553,6 +555,10 @@ header nav ul li a {
   .social a span {
     display: none; /* Hides the text, only shows icons */
   }
+
+  #menuToggle {
+    display: inline-block !important;
+  }
   
 
 }
@@ -744,23 +750,9 @@ form {
 .Uplaod {
   position: absolute;
   left: 29%;
-  bottom: 35%;
+  bottom: 29%;
   background-color: #fff;
   width: 15%;
-}
-
-.fname {
-  position: absolute;
-  background-color: white;
-  border: 3px solid black;
-  color: black;
-  padding: 8px 18px;
-  padding-right: 0px;
-  left: 785px;
-  bottom: 392px;
-  z-index: 10;
-  
-
 }
 
 .fname, .lname, .country, .typetext {
@@ -772,26 +764,26 @@ form {
 
 .fname {
   left: 46%;
-  bottom: 47%;
+  bottom: 41.5%;
   width: 12%;
 }
 
 .lname {
   left: 46%;
-  bottom: 40%;
+  bottom: 34.5%;
   width: 12%;
 }
 
 .country {
   left: 61.5%;
-  bottom: 47%;
+  bottom: 41.3%;
   width: 9.5%;
-  padding-right: 1%;
+  padding-right: 1.5%;
 }
 
 .typetext {
   left: 46%;
-  bottom: 12.5%;
+  bottom: 7%;
   width: 43%;
   padding-bottom: 11%;
 
