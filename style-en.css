@@ -67,15 +67,25 @@ header nav ul {
 
 .languages{
   position: relative;
-  right: 1000px;
+  right: 1050px;
   
 }
 
+.button {
+  padding: 5px 15px;
+  background-color: #FAF5E5;
+  display: inline-block;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #86397f;
+  font-weight: 600;
+
+}
 
 header nav ul li {
-  display: inline;
+  display: inline-block;
   padding-left: 10px;
-  margin-inline-start: 60px;
+  margin-inline-start: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -101,8 +111,16 @@ header nav ul li a:hover {
 .pages {
   position: relative;
   top: 40px;
-  left: 80px;
+  left: 100px;
 
+}
+
+.Logo a img {
+  size: 50px;
+}
+
+.english {
+  text-decoration: underline;
 }
 
 
@@ -133,9 +151,17 @@ header nav ul li a:hover {
 
   header img {
   grid-column: 11/12;
-  
+  left: 1170% !important;
   
   }
+
+  header {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  
+  }
+
 
   ul {
     list-style: none;
@@ -143,11 +169,338 @@ header nav ul li a:hover {
 
   }
 
-  .picture img {
-    width: 50%;
-    grid-column: 1/3;
+  .bg-green {
+    background-color: #86397f; 
+    color: white;
+    padding: 20px;
+    padding-right: 280px !important;
+    padding-left: 150px !important;
+    position: absolute;
+  }
+
+  .wrap {
+    max-width: 1342px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .contact-info {
+    position: absolute;
+    left: 750px !important;
+    width: 100% !important;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-info p {
+    margin: 0 0 10px;
+  }
+  
+  .contact-info a {
+    color: #FAF5E5;
+    text-decoration: none;
+  }
+  
+  .house {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FAF5E5;
+  }
+  
+  .regular {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAF5E5;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .footer-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .footer-right nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right nav ul li a {
+    color: #FAF5E5;
+    text-decoration: none;
+    font-size: 14px;
+    top: 50px !important;
+    left: 125px !important;
+    position: relative;
   
   }
+  
+  .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social img {
+    width: 50%;
+  }
+  
+  .social-facebook {
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+  }
+  
+  .social-insta {
+    position: relative;
+    bottom: 100px;
+  }
+  
+    .social-youtube {
+      position: relative;
+      right: 430px;
+  
+        }
+  
+  .social-vimeo {
+    position: relative;
+    right: 160px;
+  
+     }
+  
+  .social li {
+    list-style: none;
+  }
+  
+  .social a {
+    color: #FAF5E5;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .social a span {
+    display: none; /* Hides the text, only shows icons */
+  }
+
+
+}
+
+
+@media screen and (max-width: 1091px) {
+
+  header {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  
+  }
+  
+  header img {
+    width: 150%;
+    left: 50px;
+    top: 15px;
+    position: relative;
+  
+  }
+  
+  header nav {
+    grid-column: 6/12;
+    align-self: center;
+    grid-row: 1/2;
+  
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+  
+  }
+  
+  .languages{
+    position: relative;
+    right: 725px !important;
+    
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    margin-inline-start: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    top: 5px;
+  
+  }
+  
+  .pages {
+    position: relative;
+    top: 40px;
+    left: 80px;
+  }
+
+  .bg-green {
+    background-color: #86397f; 
+    color: white;
+    padding: 20px;
+    width: 120% !important;
+    position: absolute;
+    left: 25px;
+  }
+  
+  .wrap {
+    max-width: 1342px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .contact-info {
+    position: absolute;
+    right: 800px;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-info p {
+    margin: 0 0 10px;
+  }
+  
+  .contact-info a {
+    color: #FAF5E5;
+    text-decoration: none;
+  }
+  
+  .house {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FAF5E5;
+  }
+  
+  .regular {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAF5E5;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .footer-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .footer-right nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right nav ul li a {
+    color: #FAF5E5;
+    text-decoration: none;
+    font-size: 14px;
+    right: 50px;
+    position: relative;
+  
+  }
+  
+  .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social img {
+    width: 50%;
+  }
+  
+  .social-facebook {
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+  }
+  
+  .social-insta {
+    position: relative;
+    bottom: 100px;
+  }
+  
+    .social-youtube {
+      position: relative;
+      right: 430px;
+  
+        }
+  
+  .social-vimeo {
+    position: relative;
+    right: 160px;
+  
+     }
+  
+  .social li {
+    list-style: none;
+  }
+  
+  .social a {
+    color: #FAF5E5;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .social a span {
+    display: none; /* Hides the text, only shows icons */
+  }
+
 
 }
 
@@ -315,7 +668,7 @@ header nav ul li a:hover {
 
 }
 
-.sticker {
+.stickers {
   position: absolute;
   width: 180px; /* Adjust size of the sticker */
   height: 100px;
@@ -444,7 +797,7 @@ top: 50px;
   }
   
   header img {
-    width: 100%;
+    width: 150%;
     left: 50px;
     top: 15px;
     position: relative;
@@ -467,24 +820,24 @@ top: 50px;
   
   .languages{
     position: relative;
-    right: 675px;
+    right: 725px !important;
     
   }
   
   header nav ul li {
     display: inline;
     padding-left: 10px;
-    margin-inline-start: 60px;
+    margin-inline-start: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
   
   }
   
   header nav ul li a {
     color: #fff;
     text-decoration: none;
-    top: 25px;
+    top: 5px;
   
   }
   
@@ -494,9 +847,17 @@ top: 50px;
     left: 80px;
   }
 
+  .container {
+    width: 90%;
+    height: 100vh;
+    right: 100px;
+    position: absolute;
+
 }
 
-@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1201px) {
 
   .picture img {
     grid-column: 1/13;
@@ -516,7 +877,7 @@ top: 50px;
   }
   
   header img {
-    width: 100%;
+    width: 160%;
     left: 50px;
     top: 15px;
     position: relative;
@@ -546,10 +907,10 @@ top: 50px;
   header nav ul li {
     display: inline;
     padding-left: 10px;
-    margin-inline-start: 60px;
+    margin-inline-start: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
   
   }
   
@@ -571,7 +932,9 @@ top: 50px;
     background-color: #86397f; 
     color: white;
     padding: 20px;
-    margin: -25px;
+    width: 105%;
+    position: absolute;
+    left: 25px;
   }
   
   .wrap {
@@ -698,6 +1061,38 @@ top: 50px;
     display: none; /* Hides the text, only shows icons */
   }
 
+  .container {
+    width: 65% !important;
+    height: 100vh;
+    right: 450px !important;
+    position: absolute;
+
+}
+
+.sticker {
+  cursor: pointer;
+  width: 18% !important;
+  height: auto;
+  position: absolute;
+}
+
+.sticker21 {
+  width: 50% !important;
+  height: auto;
+  position: absolute;  /* Make the image absolute */
+  top: 220px;   
+  left:595px;
+
+}
+
+.sticker9 { 
+  height: auto;
+  position: relative;  /* Make the image absolute */
+  top: 200px;   
+  left: 150px !important;
+  transform: rotate(15deg);
+
+}
   
 }
 
@@ -708,6 +1103,7 @@ top: 50px;
   margin: -25px;
   top: 700px;
   position: relative;
+  height: 15%;
 }
 
 .wrap {
