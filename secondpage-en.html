@@ -100,11 +100,11 @@
           </div>
       </div>
             <div class="background">
-              <img src="images_for_website/background_2page.png" alt="">
+              <img src="images_for_website/background_2page_Final.png" alt="">
             </div>
             <div class="textboxes">
-                <input type="text" class="fname" name="fname" placeholder="Anny">
-                <input type="text" class="lname" name="lname" placeholder="Daarons">
+                <input type="text" class="fname" name="fname" placeholder="Your name">
+                <input type="text" class="lname" name="lname" placeholder="E-mail">
 
 
                 <!--https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page
@@ -361,8 +361,11 @@
                   <option value="ZM">Zambia</option>
                   <option value="ZW">Zimbabwe</option>
               </select>
-              <input type="text" class="typetext" name="typetext" placeholder="Please write us about your story with us!">
-              <input type="submit" class="submit" name="submit">
+              <form action="/action_page.php">
+                <input class="Uplaod" type="file" id="myFile" name="filename">
+                <input class="submit" type="submit">
+              </form>
+              <textarea class="typetext"" name="typetext" placeholder="Please write us about your story with us!" style="height:15px"></textarea>
             </div>
     
 </body>
