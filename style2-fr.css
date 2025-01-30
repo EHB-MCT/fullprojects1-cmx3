@@ -433,25 +433,25 @@ header nav ul li a {
 @media screen and (max-width: 1246px) {
 
   .fname {
-    left: 35.5%;
-    bottom: 50% !important;
+    left: 574px !important;
+    bottom: 410px !important;
     width: 11.5%;
   }
   
   .lname {
-    left: 46% !important;
-    bottom: 44.5% !important;
+    left: 574px !important;
+    bottom: 365px !important;
   }
   
   .country {
-    left: 61.8% !important;
-    bottom: 50% !important;
+    left: 770px !important;
+    bottom: 410px !important;
     padding-right: 4.5%;
   }
   
   .typetext {
-    left: 46.5%;
-    bottom: 23% !important;
+    left: 574px !important;
+    bottom: 185px !important;
     width: 40.5%;
     padding-bottom: 10%;
   
@@ -467,30 +467,30 @@ header nav ul li a {
 
 
 .postal {
-  left: 61.8% !important;
-  bottom: 44.5% !important; 
+  left: 770px !important;
+  bottom: 365px !important; 
   width: 7%;
   z-index: 30;
 }
 
 
 .year {
-  left: 72% !important;
-  bottom: 50% !important; 
+  left: 900px !important;
+  bottom: 410px !important; 
   width: 7% !important;
 }
 
 .role {
-  left: 72% !important;
-  bottom: 44.5% !important;
+  left: 900px !important;
+  bottom: 365px !important;
   width: 10% !important;
   z-index: 30;
 }
 
 .Uplaod {
   position: absolute;
-  left: 29%;
-  bottom: 40.5% !important;
+  left: 360px !important;
+  bottom: 330px !important;
   background-color: #fff;
   width: 15%;
   }
