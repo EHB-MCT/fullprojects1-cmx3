@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 body {
-    background-color: #132615 ;
+    background-color: #2D4C2B ;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 
@@ -125,7 +125,7 @@ header nav ul li a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
   #menuToggle
   {
@@ -174,7 +174,7 @@ header nav ul li a:hover {
     color: white;
     padding: 20px;
     padding-right: 280px !important;
-    padding-left: 150px !important;
+    padding-left: 50px !important;
     position: absolute;
   }
 
@@ -200,7 +200,7 @@ header nav ul li a:hover {
   
   .contact-info {
     position: absolute;
-    left: 750px !important;
+    left: 640px !important;
     width: 100% !important;
   }
   
@@ -304,11 +304,19 @@ header nav ul li a:hover {
     display: none; /* Hides the text, only shows icons */
   }
 
+  .container {
+    width: 35% !important;
+    height: 100vh;
+    right: 650px !important;
+    top: 500% !important;
+    position: absolute;
+
+  }
 
 }
 
 
-@media screen and (max-width: 1091px) {
+@media screen and (max-width: 1092px) {
 
   header {
     grid-column: 1/13;
@@ -1128,7 +1136,7 @@ top: 50px;
 
 .contact-info {
   position: absolute;
-  right: 800px;
+  right: 950px;
 }
 
 .contact-info h3 {
