@@ -29,16 +29,18 @@
 			</div>
 
         <header>
-            <img src="images_for_website/LOGO STICKER new.png" alt="#">
+            <a href="index-nl.html" class="Logo">
+                <img src="images_for_website/new logo 10 year.png" alt="Cinemaximiliaan_10_years_logo">
+              </a>
             <nav>
               <ul class="pages">
-                  <li><a href="index-en.html">De muur</a></li>
-                  <li><a href="secondpage-nl.html">Tag de Muur</a></li>
-                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donaties</a></li>
+                  <li><a href="https://cinemaximiliaan.org/nl/">Cinemaximiliaan</a></li>
+                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Doneer</a></li>
+                  <li><a class="button" href="secondpage-nl.html">Maak een sticker</a></li>
               </ul>
               <ul class="languages">
                 <li><a href="index-fr.html">FR</a></li>
-                <li><a href="index.nl.html">NL</a></li>
+                <li><a class="english" href="index.nl.html">NL</a></li>
                 <li><a href="index-en.html">EN</a></li>
             </ul>
           </nav>
@@ -53,12 +55,12 @@
                   <ul id="menu">
                     <li>
                       <a href="index-en.html">
-                        <label for="menuCheckbox" onclick="this.parentNode.click();">10th Anniversary</label>
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">10e Verjaardag</label>
                       </a>
                     </li>
                     <li>
                       <a href="secondpage-en.html">
-                        <label for="menuCheckbox" onclick="this.parentNode.click();">Read other Stories</label>
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Lees andere verhalen</label>
                       </a>
                     </li>
                     <li>
@@ -68,7 +70,7 @@
                       </li>
                       <li>
                         <a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan" target="_blank">
-                          <label for="menuCheckbox" onclick="this.parentNode.click();">Donate</label>
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Doneer</label>
                         </a>
                       </li>
                       <li>
@@ -76,128 +78,682 @@
                       <ul>
                         <li>
                             <a href="index-fr.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">French</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Frans</label>
                             </a>
                         </li>
                         <li>
                             <a href="index-en.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">English</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Engels</label>
                             </a>
                         </li>
                         <li>
                             <a href="index.nl.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">Dutch</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nederlands</label>
                             </a>
                         </li>
                       </ul>
                     </li>
                     
                     <!-- These just close the menu -->
-                    <li><label for="menuCheckbox"><a>Close Menu</a></label></li>
+                    <li><label for="menuCheckbox"><a>Sluit Menu</a></label></li>
                   </ul>
                 </div>
               </nav>
             </div>
            <div class="wrapper">
-        <div class="picture">
-          <img src="images_for_website/BACKGROUND_HOMEPAGE_transparent.png" alt="">
-          <div class="sticker" style="bottom: 33%; left: 80%;">
-            <div class="info-box">
-              <img src="images_for_website/paul.png" alt="Paul">
-              <h3>Paul Dujardin</h3>
-              <p>Het is indrukwekkend om te zien hoe jullie in de afgelopen jaren zijn gegroeid en een belangrijke rol
-                hebben gespeeld in het verbinden van nieuwkomers met de culturele en artistieke sector in België.
-                "Cinemaximiliaan heeft sinds zijn oprichting in 2015 een cruciale brug geslagen tussen nieuwkomers
-                en de bredere samenleving, door kunst en cultuur in te zetten als verbindend en transformerend
-                middel.</p>
+            <style>
+              /* Stijl voor de container */
+              .container {
+                  width: 100%;
+                  height: 100vh;
+                  right: 100px;
+                  top: 1600px;
+                  position: absolute;
+      
+              }
+      
+              /* Blur effect when popup is active */
+              .blur.active {
+                  filter: blur(5px);
+                  pointer-events: none;
+                  user-select: none;
+              }
+      
+              /* General Popup Styling */
+              .popup {
+                  position: fixed;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  visibility: hidden;
+                  opacity: 0;
+                  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+                  background-color: transparent;
+                  padding: 0;
+                  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+                  border-radius: 10px;
+                  z-index: 1000;
+              }
+      
+              .popup.active {
+                  visibility: visible;
+                  opacity: 1;
+                  transition: opacity 0.3s ease;
+              }
+      
+              /* Images inside popups */
+              .popup img {
+                  width: 50vw;
+                  height: auto;
+                  display: block;
+                  margin: 0 auto;
+                  border-radius: 10px;
+              }
+      
+              /* Close button */
+              .close-btn {
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+                  font-size: 30px;
+                  font-weight: bold;
+                  color: black;
+                  border: none;
+                  cursor: pointer;
+                  padding: 5px 10px;
+                  border-radius: 5px;
+                  z-index: 1001;
+              }
+      
+              .close-btn:hover {
+                  color: red;
+              }
+      
+              /* Clickable stickers */
+              .sticker {
+                  cursor: pointer;
+                  width: 15%;
+                  height: auto;
+                  position: absolute;
+              }
+      
+              .sticker1 {
+                  top: 50px;
+                  left: 100px;
+                  transform: rotate(-35deg);
+              }
+      
+              .sticker2 {
+                  top: 50px;
+                  left: 71%;
+                  transform: rotate(30deg);
+              }
+      
+              .sticker3 {
+              height: auto;
+              position: absolute;  /* Make the image absolute */
+              top: 260px;   
+              left: 61px;
+              transform: rotate(30deg);
+              }
+      
+              .sticker4 {
+      
+            height: auto;
+            position: absolute;  /* Make the image absolute */
+            top: 460px;   
+            left: 210px;
+            transform: rotate(10deg);
+              }
+      
+              .sticker5 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 240px;   
+          left: 1000px;
+          transform: rotate(-50deg);
+              }
+      
+              .sticker6 {
+      width: 12%;
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 470px;   
+          left: 30px;
+          transform: rotate(-10deg);
+      }
+      
+      .sticker7 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 50px;   
+          left: 395px;
+          transform: rotate(-10deg);
+      }
+      
+      .sticker8 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 470px;   
+          left: 1120px;
+          transform: rotate(-35deg);
+      }
+      
+      .sticker9 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 200px;   
+          left: 255px;
+          transform: rotate(15deg);
+      }
+      
+      .sticker10 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 50px;   
+          left: 655px;
+          transform: rotate(-45deg);
+      }
+      
+      .sticker11 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 240px;   
+          left: 1205px;
+          transform: rotate(45deg);
+      }
+      
+      .sticker12 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 470px;   
+          left:885px;
+          transform: rotate(5deg);
+      }
+      
+      .sticker13 {
+      
+          height: auto;
+          position: absolute;
+          top: 530px;  /* Make the image absolute */ 
+          left:1235px;
+          transform: rotate(5deg);
+      }
+      
+      
+      .sticker14 {
+          width: 10%;
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 170px;   
+          left:935px;
+          transform: rotate(5deg);
+      }
+      
+      .sticker15 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 370px;   
+          left:335px;
+          transform: rotate(50deg);
+      }
+      
+      .sticker16 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 520px;   
+          left:405px;
+          transform: rotate(-45deg);
+      }
+      
+      .sticker17 {
+      
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 520px;   
+          left:635px;
+          transform: rotate(-10deg);
+      }
+      
+      
+      
+      .sticker19 {
+        width: 10%;
+        height: auto;
+        position: absolute;  /* Make the image absolute */
+        top: 590px;   
+        left:155px;
+        transform: rotate(-10deg);
+      }
+      
+      .sticker20 {
+          width: 10%;
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 50px;   
+          left:1035px;
+          transform: rotate(-10deg);
+      }
+      
+      
+      .sticker21 {
+          width: 33%;
+          height: auto;
+          position: absolute;  /* Make the image absolute */
+          top: 220px;   
+          left:595px;
+      
+      }
+      
+
+
+.title {
+    font-size: 35pt;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FAF5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pink {
+    color: #ff809b;
+}
+
+.textintro {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+
+}
+
+.textintro2 {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    position: absolute;
+    bottom: 27px;
+    left: 600px;
+
+}
+
+.underlined {
+    color: #ff809b;
+    text-decoration: underline;
+}
+
+.bxl {
+    position: absolute;
+    width: 20%;
+    right: 1100px;
+    z-index: 60;
+}
+
+.starsign {
+    position: absolute;
+    width: 10%;
+    right: 50px;
+    top: 500px;
+    z-index: 60;
+}
+
+.enveloppe {
+    position: absolute;
+    width: 20%;
+    right: 1100px;
+    top:650px;
+    z-index: 60;
+}
+
+.headphones {
+    position: absolute;
+    width: 20%;
+    right: 50px;
+    top: 900px;
+    z-index: 60;
+}
+
+.park {
+    position: absolute;
+    width: 50%;
+    right: 550px;
+    top: 1100px;
+    z-index: 60;
+}
+
+.parktext {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    position: absolute;
+    width: 24%;
+    right: 140px;
+    top:1200px;
+    font-size: 15pt;
+
+}
+          </style>
+      </head>
+      <body>
+      
+        <div class="intro">
+            <div class="video-container">
+                <video controls>
+                  <source src="videos-motion/Motion_Final_EN.mov" type="video/mp4">
+                </video>
+              </div>
+            <h1 class="title">10 jaren of <span class="pink">Cinemaximiliaan</span> (CMX)</h1>
+            <p class="textintro">In de afgelopen <span class="pink">10 jaren</span>, honderden mensen hebben <span class="pink">zich aangesloten</span> met Cinemaximiliaan op een of andere manier. Ze werden deel van de <span class="pink">"CMX family"</span>. En samen staan we sterk.</p>
+            <p class="textintro2">Om deze verjaardag te vieren, horen we graag<span class="pink"> JOUW persoonlijke verhaal</span> en wat CMX voor JOU betekent. 
+                <a class="underlined" href="secondpage-nl.html">Deel je verhaal hier</a>, en laat je woorden kleur geven aan onze stickermuur.</p>
+                <img src="images_for_website/sticker_brussel-05.png" class="bxl">
             </div>
-          </div>
-          <div class="sticker-10years" style="bottom: 40%; left: 36%;">
-            <div class="info-box-10years">
-              <h3>10 JAREN</h3>
-              <p>We zijn er zelf van verschoten. In 2025 bestaat
-                Cinemaximiliaan al tien jaar, wow! Het is een even
-                wervelende als hobbelige rit geweest. Alles begon in de
-                ‘vluchtelingenzomer’ van 2015 bij het spontane initiatief van
-                een koppel film-liefhebbers om in het Brusselse
-                Maximiliaanpark
-                films te gaan tonen voor de honderden asielzoekers die
-                daar kampeerden.</p>
+            <div class="videoclip">
+                <img src="images_for_website/sticker_molenbeek - Copy.png" class="starsign">
+                <img src="images_for_website/sticker_envelopv2-02.png" class="enveloppe">
+                <img src="images_for_website/sticker_headset-03 - Copy.png" class="headphones">
             </div>
+
+            <div class="extrainfo">
+                <img src="images_for_website/sticker_parkv2-04 - Copy.png" class="park">
+                <p class="parktext">Ontdek de <span class="pink">recentste verhalen</span> op elke <span class="pink">sticker</span>, of ga terug om oudere te zien.</p>
+            </div>
+
+
+
+
+
+          <!-- Main Container -->
+          <div class="container blur" id="blur">
+              <img src="images_for_website/angela-01.png" alt="Sticker 1" class="sticker sticker1" onclick="togglePopup1()" />
+              <img src="images_for_website/alice-02-02.png" alt="Sticker 2" class="sticker sticker2" onclick="togglePopup2()" />
+              <img src="images_for_website/Sahil2-04.png" alt="Sticker 3" class="sticker sticker3" onclick="togglePopup3()" />
+              <img src="images_for_website/okkie-05.png" alt="Sticker 4" class="sticker sticker4" onclick="togglePopup4()" />
+              <img src="images_for_website/rouh-06.png" alt="Sticker 5" class="sticker sticker5" onclick="togglePopup5()" />
+              <img src="images_for_website/omar-07.png" alt="Sticker 6" class="sticker sticker6" onclick="togglePopup6()" />
+              <img src="images_for_website/paul-08.png" alt="Sticker 7" class="sticker sticker7" onclick="togglePopup7()" />
+              <img src="images_for_website/viet-10.png" alt="Sticker 8" class="sticker sticker8" onclick="togglePopup8()" />
+              <img src="images_for_website/hans-03.png" alt="Sticker 9" class="sticker sticker9" onclick="togglePopup9()" />
+              <img src="images_for_website/leyna-13.png" alt="Sticker 10" class="sticker sticker10" onclick="togglePopup10()" />
+              <img src="images_for_website/karima-11.png" alt="Sticker 11" class="sticker sticker11" onclick="togglePopup11()" />
+              <img src="images_for_website/lubnan-12.png" alt="Sticker 12" class="sticker sticker12" onclick="togglePopup12()" />
+              <img src="images_for_website/TobiNewsticker-01.png" alt="Sticker 13" class="sticker sticker13" onclick="togglePopup13()" />
+              <img src="images_for_website/Ecenewsticker-02.png" alt="Sticker 14" class="sticker sticker14" onclick="togglePopup14()" />
+              <img src="images_for_website/majdi-15.png" alt="Sticker 15" class="sticker sticker15" onclick="togglePopup15()" />
+              <img src="images_for_website/dialitonewsticker-03-03.png" alt="Sticker 16" class="sticker sticker16" onclick="togglePopup16()" />
+              <img src="images_for_website/bruno-17.png" alt="Sticker 17" class="sticker sticker17" onclick="togglePopup17()" />
+              <img src="images_for_website/annabelle-18.png" alt="Sticker 19" class="sticker sticker19" onclick="togglePopup19()" />
+              <img src="images_for_website/amir-19.png" alt="Sticker 20" class="sticker sticker20" onclick="togglePopup20()" />
+              <img src="images_for_website/new logo 10 year.png" alt="Sticker 21" class="sticker sticker21" onclick="togglePopup21()" /> 
           </div>
-        </div>
-        <div class="picture2">
-        </div>
+      
+          <!-- Popup 1 -->
+          <div id="popup1" class="popup">
+              <button class="close-btn" onclick="togglePopup1()">X</button>
+              <img src="images_for_website/Angela.png" alt="Popup 1 Afbeelding" />
+          </div>
+      
+          <!-- Popup 2 -->
+          <div id="popup2" class="popup">
+              <button class="close-btn" onclick="togglePopup2()">X</button>
+              <img src="images_for_website/alice.png" alt="Popup 2 Afbeelding" />
+          </div>
+      
+          <div id="popup3" class="popup">
+              <button class="close-btn" onclick="togglePopup3()">X</button>
+              <img src="images_for_website/sahil.png" alt="Popup 3 Afbeelding" />
+          </div>
+      
+          <div id="popup4" class="popup">
+              <button class="close-btn" onclick="togglePopup4()">X</button>
+              <img src="images_for_website/okkie_text.png" alt="Popup 4 Afbeelding" />
+          </div>
+      
+          <div id="popup5" class="popup">
+              <button class="close-btn" onclick="togglePopup5()">X</button>
+              <img src="images_for_website/rouhoullah.png" alt="Popup 5 Afbeelding" />
+          </div>
+      
+          <div id="popup6" class="popup">
+              <button class="close-btn" onclick="togglePopup6()">X</button>
+              <img src="images_for_website/omar_text.png" alt="Popup 6 Afbeelding" />
+          </div>
+      
+          <div id="popup7" class="popup">
+              <button class="close-btn" onclick="togglePopup7()">X</button>
+              <img src="images_for_website/pop-upv8-08.png" alt="Popup 7 Afbeelding" />
+          </div>
+      
+          <div id="popup8" class="popup">
+              <button class="close-btn" onclick="togglePopup8()">X</button>
+              <img src="images_for_website/viet-en.png" alt="Popup 8 Afbeelding" />
+          </div>
+      
+          <div id="popup9" class="popup">
+              <button class="close-btn" onclick="togglePopup9()">X</button>
+              <img src="images_for_website/hans.png" alt="Popup 9 Afbeelding" />
+          </div>
+      
+          <div id="popup10" class="popup">
+              <button class="close-btn" onclick="togglePopup10()">X</button>
+              <img src="images_for_website/leyna.png" alt="Popup 10 Afbeelding" />
+          </div>
+      
+          <div id="popup11" class="popup">
+              <button class="close-btn" onclick="togglePopup11()">X</button>
+              <img src="images_for_website/karima.png" alt="Popup 11 Afbeelding" />
+          </div>
+      
+          
+          <div id="popup12" class="popup">
+              <button class="close-btn" onclick="togglePopup12()">X</button>
+              <img src="images_for_website/lubnan.png" alt="Popup 12 Afbeelding" />
+          </div>
+      
+          <div id="popup13" class="popup">
+              <button class="close-btn" onclick="togglePopup13()">X</button>
+              <img src="images_for_website/tobi-en.png" alt="Popup 13 Afbeelding" />
+          </div>
+      
+          <div id="popup14" class="popup">
+              <button class="close-btn" onclick="togglePopup14()">X</button>
+              <img src="images_for_website/ece.png" alt="Popup 14 Afbeelding" />
+          </div>
+      
+          <div id="popup15" class="popup">
+              <button class="close-btn" onclick="togglePopup15()">X</button>
+              <img src="images_for_website/majdi.png" alt="Popup 15 Afbeelding" />
+          </div>
+      
+          <div id="popup16" class="popup">
+              <button class="close-btn" onclick="togglePopup16()">X</button>
+              <img src="images_for_website/dialito.png" alt="Popup 16 Afbeelding" />
+          </div>
+      
+          <div id="popup17" class="popup">
+              <button class="close-btn" onclick="togglePopup17()">X</button>
+              <img src="images_for_website/bruno-en.png" alt="Popup 17 Afbeelding" />
+          </div>
+      
+      
+          <div id="popup19" class="popup">
+              <button class="close-btn" onclick="togglePopup19()">X</button>
+              <img src="images_for_website/sticker_my_name-18.png" alt="Popup 19 Afbeelding" />
+          </div>
+      
+          <div id="popup20" class="popup">
+              <button class="close-btn" onclick="togglePopup20()">X</button>
+              <img src="images_for_website/sticker_my_name-19.png" alt="Popup 20 Afbeelding" />
+          </div>
+      
+          <div id="popup21" class="popup">
+              <button class="close-btn" onclick="togglePopup21()">X</button>
+              <img src="images_for_website/CineENGLISH.png" alt="Popup 21 Afbeelding" />
+          </div>
+      
+          <script>
+              function togglePopup1() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup1");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+      
+              function togglePopup2() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup2");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup3() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup3");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup4() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup4");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup5() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup5");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup6() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup6");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup7() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup7");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup8() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup8");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup9() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup9");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup10() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup10");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup11() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup11");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup12() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup12");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup13() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup13");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup14() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup14");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup15() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup15");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup16() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup16");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup17() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup17");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup18() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup18");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup19() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup19");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup20() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup20");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+              function togglePopup21() {
+                  var blur = document.getElementById("blur");
+                  var popup = document.getElementById("popup21");
+      
+                  blur.classList.toggle("active");
+                  popup.classList.toggle("active");
+              }
+          </script>      
       </div>
     </div>
-    <div class="bg-green">
-				
-      <div class="wrap">
-
-        <div class="footer-bottom">
-          
-          <img src="images_for_website/footerlogo.png" alt="Cinemaximiliaan" class="footlogo">
-
-          <div class="contact-info">
-                      
-            <h3 class="house">EMAIL</h3>
-            <p>
-              <a href="mailto:welcome@cinemaximiliaan.org" class="regular">welcome@cinemaximiliaan.org</a>
-            </p>
-            
-            <h3 class="house">HUIS</h3>
-            
-            <p class="regular">
-            Manchesterstraat 36<br>
-            1080 Sint Jans Molenbeek, Belgium
-            </p>
-
-          </div>
-
-          <div class="footer-right">
-
-            <section id="nav_menu-2" class="widget widget_nav_menu"><nav class="menu-footer-container" aria-label="Menu"><ul id="menu-footer" class="menu"><li id="menu-item-1283" class="house"><a href="https://cinemaximiliaan.org/nl/cinemaximiliaan/values/">WAARDEN</a></li>
-<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="https://cinemaximiliaan.org/nl/cinemaximiliaan/whoiswho/" class="house">WIE IS WIE</a></li>
-<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://cinemaximiliaan.org/nl/join-us/partnerships/" class="house">SAMENWERKINGEN</a></li>
-<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="https://cinemaximiliaan.org/nl/press/" class="house">PRESS</a></li>
-</ul></nav></section>
-            <ul class="social">
-
-              <li>
-                <a href="https://www.facebook.com/cinemaximiliaan/" target="_blank" class="social-facebook">
-                  <span class="">Facebook</span>
-                  <img src="images_for_website/facebooklogo.png" alt="Facebook Icon">
-                </a>						
-              </li>
-              <li>
-                <a href="https://www.instagram.com/cinemaximiliaan/" target="_blank" class="social-insta">
-                  <span class="">Instagram</span>
-                  <img src="images_for_website/instagramlogo.png" alt="instagram Icon">
-                </a>						
-              </li>
-              <li>						
-                <a href="https://vimeo.com/user50614194" target="_blank" class="social-vimeo">
-                  <span class="">Vimeo</span>
-                  <img src="images_for_website/vimeologo.png" alt="Youtube Icon">
-                </a>
-              </li>
-              <li>						
-                <a href="https://www.youtube.com/@cinemaximiliaan8535" target="_blank" class="social-youtube">
-                  <span class="">Youtube</span>
-                  <img src="images_for_website/youtubelogo.png" alt="Vimeo Icon">
-                </a>
-              </li>
-
-              
-            </ul>	
-
-          </div>
-
-
-        </div>
-
-
-
-      </div><!-- .wrap -->
 </body>
 </html>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:description" content="Maak je eigen tag en kleef het op deze digitale muur.">
-    <meta property="og:title" content="Maak je eigen sticker met je naam erop en laat je sticker achter op de tag-muur." />
-    <meta property="og:url" content="https://cinemaximiliaan.org/nl/make-your-sticker/"/>
+    <meta name="og:description" content="Make your own sticker and stick it on this digital Wall.">
+    <meta property="og:title" content="Cinemaximiliaan - Make your own sticker." />
+    <meta property="og:url" content="https://cinemaximiliaan.org/en/make-your-sticker/"/>
     <meta property="og:image" content="images_for_website/LOGO STICKER.png"/>
-    <link rel="stylesheet" href="style2-nl.css">
+    <link rel="stylesheet" href="style2-en.css">
     <link rel="icon" type="image/png" href="images_for_website/LOGO STICKER new.png">
-    <title>Cinemaximiliaan - Deel je verhaal!</title>
+    <title>Cinemaximiliaan - Share your story!</title>
 </head>
 <body>
     <div class="wrapper">
@@ -29,12 +29,12 @@
         </div>
 
         <header>
-            <img src="images_for_website/LOGO STICKER new.png" alt="#">
+            <img src="images_for_website/new logo 10 year.png" alt="#">
             <nav>
               <ul class="pages">
-                  <li><a href="index.nl.html">De muur</a></li>
-                  <li><a href="secondpage-en.html">Tag de muur</a></li>
-                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donaties</a></li>
+                  <li><a href="index-en.html">The Wall</a></li>
+                  <li><a href="secondpage-en.html">Tag the Wall</a></li>
+                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donate</a></li>
               </ul>
               <ul class="languages">
                 <li><a href="secondpage-fr.html">FR</a></li>
@@ -100,11 +100,23 @@
           </div>
       </div>
             <div class="background">
-              <img src="images_for_website/background_2page.png" alt="">
+              <img src="images_for_website/background_2page_Final.png" alt="">
             </div>
             <div class="textboxes">
-                <input type="text" class="fname" name="fname" placeholder="Anny">
-                <input type="text" class="lname" name="lname" placeholder="Daarons">
+                <input type="text" class="fname" name="fname" placeholder="Your name">
+                <input type="text" class="lname" name="lname" placeholder="E-mail">
+                <input type="text" class="postal" name="Postal code" placeholder="Postal code">
+                <input type="text" class="year" name="Year of joining" placeholder="Year of joining">
+                <form action="/action_page.php">
+                  <label for="cars">Choose a car:</label>
+                  <select name="role" class="role">
+                    <option value="bezoeker">bezoeker</option>
+                    <option value="vrijwilliger">vrijwilliger</option>
+                    <option value="stafmedewerker">stafmedewerker</option>
+                  </select>
+                  <br><br>
+                  <a href="Sticker_maker-en.html" class="nextPage">></a>
+                </form>
 
 
                 <!--https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page
@@ -242,7 +254,7 @@
                   <option value="LT">Lithuania</option>
                   <option value="LU">Luxembourg</option>
                   <option value="MO">Macao</option>
-                  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="MK">Macedonia, the former Yugoslav Republic of Macedonia</option>
                   <option value="MG">Madagascar</option>
                   <option value="MW">Malawi</option>
                   <option value="MY">Malaysia</option>
@@ -255,7 +267,7 @@
                   <option value="MU">Mauritius</option>
                   <option value="YT">Mayotte</option>
                   <option value="MX">Mexico</option>
-                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="FM">Micronesia, Federated States of Micronesia</option>
                   <option value="MD">Moldova, Republic of</option>
                   <option value="MC">Monaco</option>
                   <option value="MN">Mongolia</option>
@@ -330,7 +342,7 @@
                   <option value="SY">Syrian Arab Republic</option>
                   <option value="TW">Taiwan, Province of China</option>
                   <option value="TJ">Tajikistan</option>
-                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TZ">Tanzania, United Republic of Tanzania</option>
                   <option value="TH">Thailand</option>
                   <option value="TL">Timor-Leste</option>
                   <option value="TG">Togo</option>
@@ -361,84 +373,12 @@
                   <option value="ZM">Zambia</option>
                   <option value="ZW">Zimbabwe</option>
               </select>
-              <input type="text" class="typetext" name="typetext" placeholder="Vertel jullie verhalen hier!">
-              <input type="submit" class="submit" name="submit">
+              <form action="/action_page.php">
+                <input class="Uplaod" type="file" id="myFile" name="filename">
+                <textarea class="typetext" name="typetext" placeholder="Please write us about your story with us!" style="height:15px"></textarea>
+                <input class="submit" type="submit">
+              </form>
             </div>
-            <div class="video-container">
-              <video controls>
-                <source src="videos-motion/Motion_Cinemaximillan.mov" type="video/mp4">
-              </video>
-            </div>
-            <div class="bg-green">
-				
-              <div class="wrap">
-        
-                <div class="footer-bottom">
-                  
-                  <img src="images_for_website/footerlogo.png" alt="Cinemaximiliaan" class="footlogo">
-        
-                  <div class="contact-info">
-                              
-                    <h3 class="house">EMAIL</h3>
-                    <p>
-                      <a href="mailto:welcome@cinemaximiliaan.org" class="regular">welcome@cinemaximiliaan.org</a>
-                    </p>
-                    
-                    <h3 class="house">HUIS</h3>
-                    
-                    <p class="regular">
-                    Manchesterstraat 36<br>
-                    1080 Sint Jans Molenbeek, Belgium
-                    </p>
-        
-                  </div>
-        
-                  <div class="footer-right">
-        
-                    <section id="nav_menu-2" class="widget widget_nav_menu"><nav class="menu-footer-container" aria-label="Menu"><ul id="menu-footer" class="menu"><li id="menu-item-1283" class="house"><a href="https://cinemaximiliaan.org/nl/cinemaximiliaan/values/">WAARDEN</a></li>
-        <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="https://cinemaximiliaan.org/nl/cinemaximiliaan/whoiswho/" class="house">WIE IS WIE</a></li>
-        <li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://cinemaximiliaan.org/nl/join-us/partnerships/" class="house">SAMENWERKINGEN</a></li>
-        <li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="https://cinemaximiliaan.org/nl/press/" class="house">PRESS</a></li>
-
-        </ul></nav></section>
-                    <ul class="social">
-        
-                      <li>
-                        <a href="https://www.facebook.com/cinemaximiliaan/" target="_blank" class="social-facebook">
-                          <span class="">Facebook</span>
-                          <img src="images_for_website/facebooklogo.png" alt="Facebook Icon">
-                        </a>						
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/cinemaximiliaan/" target="_blank" class="social-insta">
-                          <span class="">Instagram</span>
-                          <img src="images_for_website/instagramlogo.png" alt="instagram Icon">
-                        </a>						
-                      </li>
-                      <li>						
-                        <a href="https://vimeo.com/user50614194" target="_blank" class="social-vimeo">
-                          <span class="">Vimeo</span>
-                          <img src="images_for_website/vimeologo.png" alt="Youtube Icon">
-                        </a>
-                      </li>
-                      <li>						
-                        <a href="https://www.youtube.com/@cinemaximiliaan8535" target="_blank" class="social-youtube">
-                          <span class="">Youtube</span>
-                          <img src="images_for_website/youtubelogo.png" alt="Vimeo Icon">
-                        </a>
-                      </li>
-        
-                      
-                    </ul>	
-        
-                  </div>
-        
-        
-                </div>
-        
-        
-        
-              </div><!-- .wrap -->
     
 </body>
 </html>

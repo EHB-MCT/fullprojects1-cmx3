@@ -36,7 +36,7 @@
               <ul class="pages">
                   <li><a href="https://cinemaximiliaan.org/en/">Cinemaximiliaan</a></li>
                   <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donate</a></li>
-                  <li><a class="button" href="secondpage-en.html">Sticker Maker</a></li>
+                  <li><a class="button" href="secondpage-en.html">Make a sticker</a></li>
               </ul>
               <ul class="languages">
                 <li><a href="index-fr.html">FR</a></li>
@@ -107,6 +107,7 @@
                   width: 100%;
                   height: 100vh;
                   right: 100px;
+                  top: 1600px;
                   position: absolute;
       
               }
@@ -339,7 +340,7 @@
           height: auto;
           position: absolute;  /* Make the image absolute */
           top: 50px;   
-          left:935px;
+          left:1035px;
           transform: rotate(-10deg);
       }
       
@@ -353,10 +354,127 @@
       
       }
       
+
+
+.title {
+    font-size: 35pt;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FAF5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pink {
+    color: #ff809b;
+}
+
+.textintro {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+
+}
+
+.textintro2 {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    position: absolute;
+    bottom: 27px;
+    left: 600px;
+
+}
+
+.underlined {
+    color: #ff809b;
+    text-decoration: underline;
+}
+
+.bxl {
+    position: absolute;
+    width: 20%;
+    right: 1100px;
+    z-index: 60;
+}
+
+.starsign {
+    position: absolute;
+    width: 10%;
+    right: 50px;
+    top: 500px;
+    z-index: 60;
+}
+
+.enveloppe {
+    position: absolute;
+    width: 20%;
+    right: 1100px;
+    top:650px;
+    z-index: 60;
+}
+
+.headphones {
+    position: absolute;
+    width: 20%;
+    right: 50px;
+    top: 900px;
+    z-index: 60;
+}
+
+.park {
+    position: absolute;
+    width: 50%;
+    right: 550px;
+    top: 1100px;
+    z-index: 60;
+}
+
+.parktext {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    position: absolute;
+    width: 24%;
+    right: 140px;
+    top:1200px;
+    font-size: 15pt;
+
+}
           </style>
       </head>
       <body>
       
+        <div class="intro">
+            <div class="video-container">
+                <video controls>
+                  <source src="videos-motion/Motion_Final_EN.mov" type="video/mp4">
+                </video>
+              </div>
+            <h1 class="title">10 years of <span class="pink">Cinemaximiliaan</span> (CMX)</h1>
+            <p class="textintro">Over the past <span class="pink">10 years</span>, hundreds of people have <span class="pink">connected</span> with Cinemaximiliaan in one way or another. They became part of the <span class="pink">CMX family</span>. And together, we stand strong.</p>
+            <p class="textintro2">To celebrate this anniversary, we want to hear<span class="pink"> YOUR personal story</span> and what CMX has meant to YOU. 
+                <a class="underlined" href="secondpage-en.html">Share your note here</a>, and let your words bring color to our sticker wall</p>
+                <img src="images_for_website/sticker_brussel-05.png" class="bxl">
+            </div>
+            <div class="videoclip">
+                <img src="images_for_website/sticker_molenbeek - Copy.png" class="starsign">
+                <img src="images_for_website/sticker_envelopv2-02.png" class="enveloppe">
+                <img src="images_for_website/sticker_headset-03 - Copy.png" class="headphones">
+            </div>
+
+            <div class="extrainfo">
+                <img src="images_for_website/sticker_parkv2-04 - Copy.png" class="park">
+                <p class="parktext">Explore the <span class="pink">latest stories</span> on each <span class="pink">sticker</span>, or slide back to see older ones.</p>
+            </div>
+
+
+
+
+
           <!-- Main Container -->
           <div class="container blur" id="blur">
               <img src="images_for_website/angela-01.png" alt="Sticker 1" class="sticker sticker1" onclick="togglePopup1()" />

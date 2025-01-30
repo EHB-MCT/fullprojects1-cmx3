@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #132615;
+    background-color: #2D4C2B;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -68,10 +68,21 @@ header nav ul {
   
 }
 
+.button {
+  padding: 5px 15px;
+  background-color: #FAF5E5;
+  display: inline-block;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #86397f;
+  font-weight: 600;
+
+}
+
 header nav ul li {
   display: inline;
   padding-left: 10px;
-  margin-inline-start: 60px;
+  margin-inline-start: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -318,27 +329,21 @@ header nav ul li a {
     left: 80px;
   }
 
-  .fname, .lname, .country, .typetext {
-    position: absolute;
-    background-color: white;
-    border: 0.3rem solid black;
-    padding: 0.5% 1%;
-  }
   
   .fname {
     left: 35.5%;
-    bottom: 46% !important;
+    bottom: 46.5% !important;
     width: 11.5%;
   }
   
   .lname {
-    left: 60.5% !important;
-    bottom: 46% !important;
+    left: 46% !important;
+    bottom: 41% !important;
   }
   
   .country {
-    left: 15%;
-    bottom: 39.5% !important;
+    left: 61.8% !important;
+    bottom: 46.5% !important;
     padding-right: 4.5%;
   }
   
@@ -350,67 +355,179 @@ header nav ul li a {
   
   }
 
+  .fname, .lname, .country, .typetext, .postal, 
+.year, .role{
+  position: absolute;
+  background-color: white;
+  border: 0.3rem solid black;
+  padding: 0.5% 1%;
+}
+
+
+.postal {
+  left: 61.8% !important;
+  bottom: 41% !important; 
+  width: 7%;
+  z-index: 30;
+}
+
+
+.year {
+  left: 72% !important;
+  bottom: 46.5% !important; 
+  width: 7% !important;
+}
+
+.role {
+  left: 72% !important;
+  bottom: 41% !important;
+  width: 10% !important;
+  z-index: 30;
+}
+
+.Uplaod {
+  position: absolute;
+  left: 29%;
+  bottom: 36.5% !important;
+  background-color: #fff;
+  width: 15%;
+}
+
+
 }
 
 
 @media screen and (max-width: 1201px) {
 
-  .fname, .lname, .country, .typetext {
-    position: absolute;
-    background-color: white;
-    border: 0.3rem solid black;
-    padding: 0.5% 1%;
-  }
-
   .fname {
-    left: 46.5%;
-    bottom: 48% !important;
+    left: 35.5%;
+    bottom: 51% !important;
+    width: 11.5%;
   }
-
+  
   .lname {
-    left: 58.5%;
-    bottom: 48% !important;
+    left: 46% !important;
+    bottom: 45.5% !important;
   }
-
+  
   .country {
-    left: 15%;
-    bottom: 42.5% !important;
-    padding-right: 3.5% !important;
+    left: 61.8% !important;
+    bottom: 51% !important;
+    padding-right: 4.5%;
   }
-
+  
   .typetext {
     left: 46.5%;
-    bottom: 23% !important;
+    bottom: 24% !important;
     width: 40.5%;
     padding-bottom: 10%;
+  
   }
+
+  .fname, .lname, .country, .typetext, .postal, 
+.year, .role{
+  position: absolute;
+  background-color: white;
+  border: 0.3rem solid black;
+  padding: 0.5% 1%;
+}
+
+
+.postal {
+  left: 61.8% !important;
+  bottom: 45.5% !important; 
+  width: 7%;
+  z-index: 30;
+}
+
+
+.year {
+  left: 72% !important;
+  bottom: 51% !important; 
+  width: 7% !important;
+}
+
+.role {
+  left: 72% !important;
+  bottom: 45.5% !important;
+  width: 10% !important;
+  z-index: 30;
+}
+
+.Uplaod {
+  position: absolute;
+  left: 29%;
+  bottom: 41.5% !important;
+  background-color: #fff;
+  width: 15%;
+  }
+
 }
 
 @media screen and (max-width: 769px) {
   .fname {
-    left: 70% !important;
-    bottom: 49% !important;
-    width: 9.5%;
+    left: 69.5% !important;
+    bottom: 28.5% !important;
+    width: 18.5% !important;
   }
-
+  
   .lname {
-    left: 85% !important;
-    bottom: 49% !important;
-    width: 18%;
+    left: 69.5% !important;
+    bottom: 23.5% !important;
+    width: 18.5% !important;
   }
-
+  
   .country {
-    left: 70% !important;
-    bottom: 44% !important;
-    padding-right: 3.5%;
-    width: 36% !important;
+    left: 91.8% !important;
+    bottom: 28.5% !important;
+    width: 16% !important;
+    padding-right: 4.5%;
+  }
+  
+  .typetext {
+    left: 69.5% !important;
+    bottom: 3.5% !important;
+    width: 65% !important;
+    padding-bottom: 15.5% !important;
+  
   }
 
-  .typetext {
-    left: 69% !important;
-    bottom: 25.5% !important;
-    width: 62.5% !important;
-    padding-bottom: 14.5% !important;
+  .fname, .lname, .country, .typetext, .postal, 
+.year, .role{
+  position: absolute;
+  background-color: white;
+  border: 0.3rem solid black;
+  padding: 0.5% 1%;
+}
+
+
+.postal {
+  left: 91.8% !important;
+  bottom: 23.5% !important; 
+  width: 13% !important;
+  z-index: 30;
+}
+
+
+.year {
+  left: 109% !important;
+  bottom: 28.5% !important; 
+  width: 11% !important;
+}
+
+.role {
+  left: 109% !important;
+  bottom: 23.5% !important;
+  width: 14% !important;
+  z-index: 30;
+}
+
+.Uplaod {
+  position: absolute;
+  left: 42% !important;
+  bottom: 41.5% !important;
+  background-color: #fff;
+  width: 23% !important;
   }
 
   .background img {
@@ -421,139 +538,23 @@ header nav ul li a {
   
   }
 
-
-  .bg-green {
-    background-color: #86397f; 
-    color: white;
-    padding: 0px !important;
-    width: 1113px !important;
-    left: 25px !important;
-    position: absolute;
-  }
-
-  
-  .wrap {
-    max-width: 1342px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
-  }
-  
-  .footer-bottom img {
-    max-width: 150px;
-    height: auto;
-  }
-  
-  .contact-info {
-    position: absolute;
-    left: 200px;
-    width: 100%;
-  }
-  
-  .contact-info h3 {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  .contact-info p {
-    margin: 0 0 10px;
-  }
-  
-  .contact-info a {
-    color: #FAF5E5;
-    text-decoration: none;
-  }
-  
-  .house {
-    font-family: "poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #FAF5E5;
-  }
-  
-  .regular {
-    font-family: "poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #FAF5E5;
-  }
-  .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .footer-right nav ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  
-  .footer-right nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-right nav ul li a {
-    color: #FAF5E5;
-    text-decoration: none;
-    font-size: 14px;
-    bottom: 15px;
-
-  }
-  
-  .social {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .social img {
-    width: 50%;
-  }
-  
-  .social-facebook {
-  position: relative;
-  bottom: 100px;
-  left: 50px;
-  }
-  
-  .social-insta {
+  header img {
+    width: 200% !important;
+    left: 1000px !important;
+    top: 15px;
     position: relative;
-    bottom: 100px;
+  
   }
   
-    .social-youtube {
-      position: relative;
-      right: 430px;
-  
-        }
-  
-  .social-vimeo {
-    position: relative;
-    right: 160px;
-  
-     }
-  
-  .social li {
-    list-style: none;
+  .languages{
+  display: none;
+    
   }
   
-  .social a {
-    color: #FAF5E5;
-    text-decoration: none;
-    font-size: 14px;
-  }
+  .pages {
+    display: none;
   
-  .social a span {
-    display: none; /* Hides the text, only shows icons */
+  
   }
 
   #menuToggle {
@@ -565,36 +566,77 @@ header nav ul li a {
 
 @media screen and (max-width: 481px) {
   .fname {
-    left: 65% !important;
-    bottom: 50.5% !important;
-    width: 9%;
+    left: 117.5% !important;
+    bottom: 4.5% !important;
+    width: 33.5% !important;
   }
-
+  
   .lname {
-    left: 79.5% !important;
-    bottom: 50.5% !important;
-    width: 16.5%;
+    left: 117.5% !important;
+    bottom: -1.5% !important;
+    width: 33.5% !important;
   }
-
+  
   .country {
-    left: 65% !important;
-    bottom: 45.5% !important;
-    padding-right: 3.5%;
+    left: 157.5% !important;
+    bottom: 4.5% !important;
+    width: 24% !important;
+    padding-right: 4.5%;
+  }
+  
+  .typetext {
+    left: 117.5% !important;
+    top: 104.5% !important;
+    width: 113% !important;
+    padding-bottom: 30% !important;
+  
   }
 
-  .typetext {
-    left: 65% !important;
-    bottom: 28.5% !important;
-    width: 60% !important;
-    padding-bottom: 13.5% !important;
+  .fname, .lname, .country, .typetext, .postal, 
+.year, .role{
+  position: absolute;
+  background-color: white;
+  border: 0.3rem solid black;
+  padding: 0.5% 1%;
+}
+
+
+.postal {
+  left: 157.5% !important;
+  bottom: -1.5% !important; 
+  width: 20% !important;
+  z-index: 30;
+}
+
+
+.year {
+  left: 185% !important;
+  bottom: 4.5% !important; 
+  width: 19% !important;
+}
+
+.role {
+  left: 185% !important;
+  bottom: -1.5% !important; 
+  width: 23% !important;
+}
+
+.Uplaod {
+  position: absolute;
+  left: 74.5% !important;
+  bottom: -7% !important;
+  background-color: #fff;
+  width: 38% !important;
   }
 
   .background img {
     grid-column: 1/13;
-    width: 230%;
+    width: 255% !important;
+    height: 100% !important;
     grid-row: 3/4;
     position: absolute;
-    top: 250px;
+    top: 450px;
+    margin: 0;
     
   
   }
@@ -755,7 +797,8 @@ form {
   width: 15%;
 }
 
-.fname, .lname, .country, .typetext {
+.fname, .lname, .country, .typetext, .postal, 
+.year, .role{
   position: absolute;
   background-color: white;
   border: 0.3rem solid black;
@@ -772,6 +815,43 @@ form {
   left: 46%;
   bottom: 34.5%;
   width: 12%;
+}
+
+.nextPage {
+  background-color: #86397f;
+  color: #FAF5E5;
+  z-index: 50;
+  position: absolute;
+  left: 880px;
+  bottom: -8px;
+  text-decoration: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  font-size: 25px
+
+}
+
+
+.postal {
+  left: 61.5%;
+  bottom: 34.5%;
+  width: 7%;
+}
+
+
+.year {
+  left: 71.5%;
+  bottom: 41.3%;
+  width: 12%;
+}
+
+.role {
+  left: 71.5%;
+  bottom: 34.5%;
+  width: 14.5%;
 }
 
 .country {
@@ -918,4 +998,3 @@ left: 50px;
 .social a span {
   display: none; /* Hides the text, only shows icons */
 }
-

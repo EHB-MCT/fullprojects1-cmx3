@@ -92,6 +92,25 @@ header nav ul li {
 
 }
 
+.video-container {
+  margin: 20px auto;
+  max-width: 800px;
+  position: absolute;
+  padding-bottom: 150px;
+  top: 130px;
+  left: 45px;
+  padding-top: 200px;
+  z-index: 30;
+}
+
+video {
+  width: 125%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -115,8 +134,8 @@ header nav ul li a:hover {
 
 }
 
-.Logo a img {
-  size: 50px;
+.Logo {
+  size: 25px;
 }
 
 .english {

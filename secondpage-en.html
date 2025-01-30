@@ -29,12 +29,12 @@
         </div>
 
         <header>
-            <img src="images_for_website/LOGO STICKER new.png" alt="#">
+            <img src="images_for_website/new logo 10 year.png" alt="#">
             <nav>
               <ul class="pages">
-                  <li><a href="index-en.html">The Wall</a></li>
-                  <li><a href="secondpage-en.html">Tag the Wall</a></li>
-                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donate</a></li>
+                <li><a href="https://cinemaximiliaan.org/en/">Cinemaximiliaan</a></li>
+                <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donate</a></li>
+                <li><a class="button" href="secondpage-en.html">Make a sticker</a></li>
               </ul>
               <ul class="languages">
                 <li><a href="secondpage-fr.html">FR</a></li>
@@ -105,6 +105,18 @@
             <div class="textboxes">
                 <input type="text" class="fname" name="fname" placeholder="Your name">
                 <input type="text" class="lname" name="lname" placeholder="E-mail">
+                <input type="text" class="postal" name="Postal code" placeholder="Postal code">
+                <input type="text" class="year" name="Year of joining" placeholder="Year of joining">
+                <form action="/action_page.php">
+                  <label for="cars">Choose a car:</label>
+                  <select name="role" class="role">
+                    <option value="bezoeker">bezoeker</option>
+                    <option value="vrijwilliger">vrijwilliger</option>
+                    <option value="stafmedewerker">stafmedewerker</option>
+                  </select>
+                  <br><br>
+                  <a href="Sticker_maker-en.html" class="nextPage">></a>
+                </form>
 
 
                 <!--https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page
@@ -363,9 +375,9 @@
               </select>
               <form action="/action_page.php">
                 <input class="Uplaod" type="file" id="myFile" name="filename">
+                <textarea class="typetext" name="typetext" placeholder="Please write us about your story with us!" style="height:15px"></textarea>
                 <input class="submit" type="submit">
               </form>
-              <textarea class="typetext"" name="typetext" placeholder="Please write us about your story with us!" style="height:15px"></textarea>
             </div>
     
 </body>
