@@ -916,7 +916,7 @@ top: 50px;
   opacity: 1;
 }
 
-@media screen and (max-width: 1342px) {
+@media screen and (max-width: 1421px) {
 
   .picture img {
     grid-column: 1/13;
@@ -969,7 +969,7 @@ top: 50px;
     margin-inline-start: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
   
   }
   
