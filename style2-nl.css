@@ -416,6 +416,89 @@ header nav ul li a {
 
 }
 
+@media screen and (max-width: 1246px) {
+
+
+  .nextPage {
+    background-color: #86397f;
+    color: #FAF5E5;
+    z-index: 50;
+    position: absolute;
+    left: 620px !important;
+    bottom: 125px !important; 
+    text-decoration: none;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    border-radius: 25px;
+    font-size: 25px
+  
+  }
+
+  .fname {
+    left: 35.5%;
+    bottom: 50% !important;
+    width: 11.5%;
+  }
+  
+  .lname {
+    left: 46% !important;
+    bottom: 44.5% !important;
+  }
+  
+  .country {
+    left: 61.8% !important;
+    bottom: 50% !important;
+    padding-right: 4.5%;
+  }
+  
+  .typetext {
+    left: 46.5%;
+    bottom: 23% !important;
+    width: 40.5%;
+    padding-bottom: 10%;
+  
+  }
+
+  .fname, .lname, .country, .typetext, .postal, 
+.year, .role{
+  position: absolute;
+  background-color: white;
+  border: 0.3rem solid black;
+  padding: 0.5% 1%;
+}
+
+
+.postal {
+  left: 61.8% !important;
+  bottom: 44.5% !important; 
+  width: 7%;
+  z-index: 30;
+}
+
+
+.year {
+  left: 72% !important;
+  bottom: 50% !important; 
+  width: 7% !important;
+}
+
+.role {
+  left: 72% !important;
+  bottom: 44.5% !important;
+  width: 10% !important;
+  z-index: 30;
+}
+
+.Uplaod {
+  position: absolute;
+  left: 29%;
+  bottom: 40.5% !important;
+  background-color: #fff;
+  width: 15%;
+  }
+
+}
+
 
 @media screen and (max-width: 1201px) {
 
