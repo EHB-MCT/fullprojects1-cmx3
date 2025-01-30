@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:description" content="Make your own sticker and stick it on this digital Wall.">
-    <meta property="og:title" content="Cinemaximiliaan - Make your own sticker." />
-    <meta property="og:url" content="https://cinemaximiliaan.org/en/make-your-sticker/"/>
+    <meta name="og:description" content="Maak je eigen sticker en plak hem op deze digitale muur.">
+    <meta property="og:title" content="Cinemaximiliaan - Maak je eigen sticker" />
+    <meta property="og:url" content="https://cinemaximiliaan.org/nl/make-your-sticker/"/>
     <meta property="og:image" content="images_for_website/LOGO STICKER.png"/>
-    <link rel="stylesheet" href="style2-en.css">
+    <link rel="stylesheet" href="style2-nl.css">
     <link rel="icon" type="image/png" href="images_for_website/LOGO STICKER new.png">
     <title>Cinemaximiliaan - Share your story!</title>
 </head>
@@ -29,16 +29,18 @@
         </div>
 
         <header>
-            <img src="images_for_website/new logo 10 year.png" alt="#">
+          <a href="index-en.html" class="Logo">
+            <img src="images_for_website/new logo 10 year.png" alt="Cinemaximiliaan_10_years_logo">
+          </a>
             <nav>
               <ul class="pages">
-                  <li><a href="index-en.html">The Wall</a></li>
-                  <li><a href="secondpage-en.html">Tag the Wall</a></li>
-                  <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Donate</a></li>
+                <li><a href="https://cinemaximiliaan.org/en/">Cinemaximiliaan</a></li>
+                <li><a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan">Doneer</a></li>
+                <li><a class="button" href="secondpage-fr.html">Maak een sticker</a></li>
               </ul>
               <ul class="languages">
                 <li><a href="secondpage-fr.html">FR</a></li>
-                <li><a href="secondpage-nl.html">NL</a></li>
+                <li><a class="english" href="secondpage-nl.html">NL</a></li>
                 <li><a href="secondpage-en.html">EN</a></li>
             </ul>
           </nav>
@@ -53,12 +55,12 @@
                   <ul id="menu">
                     <li>
                       <a href="index-en.html">
-                        <label for="menuCheckbox" onclick="this.parentNode.click();">10th Anniversary</label>
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">10e Verjaardag</label>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <label for="menuCheckbox" onclick="this.parentNode.click();">Read other Stories</label>
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Lees andere verhalen</label>
                       </a>
                     </li>
                     <li>
@@ -68,7 +70,7 @@
                       </li>
                       <li>
                         <a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan" target="_blank">
-                          <label for="menuCheckbox" onclick="this.parentNode.click();">Donate</label>
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Doneer</label>
                         </a>
                       </li>
                       <li>
@@ -76,24 +78,24 @@
                       <ul>
                         <li>
                             <a href="index-fr.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">French</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Frans</label>
                             </a>
                         </li>
                         <li>
                             <a href="index-en.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">English</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Engels</label>
                             </a>
                         </li>
                         <li>
                             <a href="index.nl.html">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();">Dutch</label>
+                                <label for="menuCheckbox" onclick="this.parentNode.click();">Nederlands</label>
                             </a>
                         </li>
                       </ul>
                     </li>
                     
                     <!-- These just close the menu -->
-                    <li><label for="menuCheckbox"><a>Close Menu</a></label></li>
+                    <li><label for="menuCheckbox"><a>Sluit Menu</a></label></li>
                   </ul>
                 </div>
             </nav>
@@ -103,10 +105,10 @@
               <img src="images_for_website/background_2page_Final.png" alt="">
             </div>
             <div class="textboxes">
-                <input type="text" class="fname" name="fname" placeholder="Your name">
+                <input type="text" class="fname" name="fname" placeholder="Jouw Naam">
                 <input type="text" class="lname" name="lname" placeholder="E-mail">
-                <input type="text" class="postal" name="Postal code" placeholder="Postal code">
-                <input type="text" class="year" name="Year of joining" placeholder="Year of joining">
+                <input type="text" class="postal" name="Postal code" placeholder="Postcode">
+                <input type="text" class="year" name="Year of joining" placeholder="Jaar van aansluiting">
                 <form action="/action_page.php">
                   <label for="cars">Choose a car:</label>
                   <select name="role" class="role">
@@ -115,7 +117,7 @@
                     <option value="stafmedewerker">stafmedewerker</option>
                   </select>
                   <br><br>
-                  <a href="Sticker_maker-en.html" class="nextPage">></a>
+                  <a href="Sticker_maker-nl.html" class="nextPage">></a>
                 </form>
 
 
@@ -375,7 +377,7 @@
               </select>
               <form action="/action_page.php">
                 <input class="Uplaod" type="file" id="myFile" name="filename">
-                <textarea class="typetext" name="typetext" placeholder="Please write us about your story with us!" style="height:15px"></textarea>
+                <textarea class="typetext" name="typetext" placeholder="Deel jouw verhaal met ons!" style="height:15px"></textarea>
                 <input class="submit" type="submit">
               </form>
             </div>

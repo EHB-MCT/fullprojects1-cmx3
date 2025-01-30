@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    background-color: #132615;
+    background-color: #2D4C2B;
     font-family: "Poppins", sans-serif;
 }
 
@@ -83,7 +83,7 @@ header nav ul li {
     margin-inline-start: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header nav ul li a {
@@ -154,7 +154,7 @@ header nav ul li a {
     header nav ul li {
       display: inline;
       padding-left: 10px;
-      margin-inline-start: 50px;
+      margin-inline-start: 40px;
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
       font-size: 15px;

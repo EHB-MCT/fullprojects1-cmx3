@@ -332,6 +332,118 @@ header nav ul li a:hover {
 
   }
 
+  .title {
+    font-size: 35pt;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FAF5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pink {
+    color: #ff809b;
+}
+
+.textintro {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 50%;
+    left: 150px !important;
+    top: 20px !important;
+
+}
+
+.textintro2 {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    position: absolute;
+    top: 135px !important;
+    left: 700px !important;
+
+}
+
+.underlined {
+    color: #ff809b;
+    text-decoration: underline;
+}
+
+.bxl {
+    position: absolute;
+    width: 20%;
+    right: 860px !important;
+    top: 300px !important;
+    z-index: 60;
+}
+
+.starsign {
+    position: absolute;
+    width: 10%;
+    right: 50px;
+    top: 500px;
+    z-index: 60;
+}
+
+.enveloppe {
+    position: absolute;
+    width: 20%;
+    right: 875px !important;
+    top:600px !important;
+    z-index: 60;
+}
+
+.headphones {
+    position: absolute;
+    width: 20%;
+    right: 10px !important;
+    top: 815px !important;
+    z-index: 60;
+}
+
+.park {
+    position: absolute;
+    width: 25% !important;
+    right: 650px !important;
+    top: 955px !important;
+    z-index: 60;
+}
+
+.parktext {
+    color: #FAF5E5;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    position: absolute;
+    width: 24%;
+    right: 140px;
+    top:975px !important;
+    font-size: 15pt;
+
+  }
+
+.video-container {
+  margin: 20px auto;
+  max-width: 800px;
+  position: absolute;
+  padding-bottom: 150px;
+  top: 170px;
+  left: 250px !important;
+  padding-top: 200px;
+  z-index: 30;
+  }
+
+video {
+  width: 100% !important;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
 }
 
 

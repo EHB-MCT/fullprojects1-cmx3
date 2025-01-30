@@ -16,6 +16,10 @@ body {
 
 }
 
+.english {
+  text-decoration: underline;
+}
+
 
 #grid {
     position: absolute;
@@ -85,7 +89,7 @@ header nav ul li {
   margin-inline-start: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 100px;
 
 }
@@ -524,10 +528,10 @@ header nav ul li a {
 
 .Uplaod {
   position: absolute;
-  left: 42% !important;
-  bottom: 41.5% !important;
+  left: 44% !important;
+  bottom: 20% !important;
   background-color: #fff;
-  width: 23% !important;
+  width: 22% !important;
   }
 
   .background img {
@@ -560,6 +564,22 @@ header nav ul li a {
   #menuToggle {
     display: inline-block !important;
   }
+
+  .nextPage {
+    background-color: #86397f;
+    color: #FAF5E5;
+    z-index: 50;
+    position: absolute;
+    left: 580px !important;
+    bottom: -35px !important; 
+    text-decoration: none;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    border-radius: 25px;
+    font-size: 25px
+  
+  }
+  
   
 
 }
@@ -781,6 +801,20 @@ header nav ul li a {
 
   }
 
+  .nextPage {
+    background-color: #86397f;
+    color: #FAF5E5;
+    z-index: 50;
+    position: absolute;
+    left: 600px !important;
+    bottom: -275px !important; 
+    text-decoration: none;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    border-radius: 25px;
+    font-size: 25px
+  
+  }
 }
 
 
