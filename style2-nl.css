@@ -46,7 +46,7 @@ header {
 
 header img {
   width: 125%;
-  right: 200px;
+  right: 100px;
   top: 15px;
   position: relative;
 
@@ -815,6 +815,20 @@ header nav ul li a {
     font-size: 25px
   
   }
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s, transform 0.5s;
+  transition-timing-function: ease-in;
+
+}
+
+header nav ul li a:hover {
+  transform: translateY(-10px);
+  color: #86397f;
+
 }
 
 
