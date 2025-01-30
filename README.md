@@ -1,4 +1,4 @@
-Bronnene en Referenties voor de Website:
+Bronnen en Referenties voor de Website:
 
 Erik Terwan. (z.d.). Pure CSS hamburger fold-out menu (no JavaScript), van https://codepen.io/erikterwan/pen/EVzeRP
 
